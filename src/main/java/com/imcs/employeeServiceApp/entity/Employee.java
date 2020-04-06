@@ -14,7 +14,7 @@ public class Employee {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator ="myseq")
-	@SequenceGenerator(sequenceName = "EMPL_HR_SEQ", name = "myseq", allocationSize = 1)
+	@SequenceGenerator(sequenceName = "EMPL_HR_SEQ", name = "myseq", allocationSize = 1) // auto increase primary key in DB
 	@Column(name = "EMPLOYEE_ID")
 	private int empId;
 	
