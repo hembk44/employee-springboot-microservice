@@ -11,6 +11,8 @@ AOP uses aspect(which is a common feature like Exception Handling, Application l
 
 This microservice is using @ControllerAdvice for Exception Handling which is a type of Advice(what action is taken and when it should be applied) in AOP. 
 
+# swagger
+http://localhost:8081/swagger-ui.html#/
 
 
 
