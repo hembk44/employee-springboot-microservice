@@ -20,7 +20,7 @@ import com.imcs.employeeServiceApp.exceptions.InternalServerErrorException;
 import com.imcs.employeeServiceApp.services.EmployeeService;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/rest/api")
 public class EmployeeController {
 
 	private final String regex = "\\d+";
