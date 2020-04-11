@@ -14,12 +14,10 @@ import static springfox.documentation.builders.PathSelectors.regex;
 @EnableSwagger2
 public class SwaggerConfig {
 
-	 @Bean
-	    public Docket api() { 
-	        return new Docket(DocumentationType.SWAGGER_2)  
-	          .select()                                  
-	          .apis(RequestHandlerSelectors.basePackage("com.imcs.employeeServiceApp"))              
-	          .paths(regex("/api.*"))                          
-	          .build();                                           
-	    }
+	@Bean
+	public Docket api() {
+		return new Docket(DocumentationType.SWAGGER_2).select()
+				.apis(RequestHandlerSelectors.basePackage("com.imcs.employeeServiceApp")).paths(regex("/api.*"))
+				.build();
+	}
 }
