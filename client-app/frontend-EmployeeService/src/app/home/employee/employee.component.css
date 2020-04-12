@@ -1,0 +1,37 @@
+tr:nth-child(even) {
+  background-color: #e7e1e1ee;
+}
+
+tr:nth-child(odd) {
+  background-color: #ebd9d9;
+}
+
+th {
+  background-color: rgb(129, 72, 72);
+  color: white;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+table {
+  margin: 20px auto;
+}
+
+.create-button {
+  margin: 20px auto;
+
+}
+
+.button-delete {
+  color: white;
+  background-color: #f31414
+}
+
+.button-update {
+  color: white;
+  background-color: #8b1919
+}

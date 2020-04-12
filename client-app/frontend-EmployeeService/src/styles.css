@@ -1,1 +1,242 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+
+.cal-month-view .cal-event {
+  visibility: hidden;
+}
+
+.cal-week-view .cal-hour:not(:last-child) .cal-hour-segment,
+.cal-week-view .cal-hour:last-child :not(:last-child) .cal-hour-segment {
+  border-bottom: none;
+}
+
+.ngx-pagination .current {
+
+  background: #800029 !important;
+}
+
+
+
+.cal-event .cal-event-title {
+  color: white;
+}
+
+::ng-deep .mat-accent {
+  color: #800029;
+}
+
+.mat-accent .mat-pseudo-checkbox-checked,
+.mat-accent .mat-pseudo-checkbox-indeterminate,
+.mat-pseudo-checkbox-checked,
+.mat-pseudo-checkbox-indeterminate {
+  background: #800029;
+}
+
+::ng-deep mat-checkbox {
+  background: #800029;
+}
+
+#calendar {
+  height: auto;
+}
+
+.fc-button {
+  background-color: white;
+  border: solid 1px #800029;
+  color: #800029;
+  background-image: none;
+  text-transform: capitalize;
+}
+
+.fc-button-primary:not(:disabled).fc-button-active {
+  background-color: white;
+  color: #800029;
+}
+
+.fc-button:hover {
+  background-color: #800029;
+}
+
+.fc-button:disabled {
+  background-color: white;
+  color: #800029;
+}
+
+.fc-left .fc-button {
+  border: none;
+}
+
+.fc-left .fc-button:hover {
+  background-color: white;
+  color: #800029;
+}
+
+.fc-button:focus,
+.fc-button-primary:focus {
+  box-shadow: none;
+}
+
+.fc-event {
+  border-width: 3px;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
+  cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.delete {
+  background: white;
+  color: red;
+  border: #800029 solid 1px;
+}
+
+.standard {
+  background: #800029;
+  color: white;
+  border: rgb(185, 163, 90) solid 1px;
+}
+
+.standard .mat-simple-snackbar-action {
+  color: rgb(185, 163, 90);
+  ;
+}
+
+.delete .mat-simple-snackbar-action {
+  color: #800029;
+  ;
+}
+
+.standard .mat-simple-snackbar-action {
+  color: rgb(185, 163, 90);
+}
+
+.delete .mat-simple-snackbar-action {
+  color: rgb(185, 163, 90);
+}
+
+.primary {
+  color: #800029;
+  border: solid 1px #800029;
+}
+
+.button-maroon {
+  color: white;
+  background-color: #800029
+}
+
+.button-delete {
+  color: white;
+  background-color: #f31414
+}
+
+.button-update {
+  color: white;
+  background-color: #8b1919
+}
+
+.mat-menu-item:hover:not([disabled]) {
+  color: white;
+  background: #800029;
+}
+
+.mat-list-base .mat-list-item.mat-multi-line .mat-list-item-content,
+.mat-list-base .mat-list-option.mat-multi-line .mat-list-item-content {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.mat-list-base .mat-list-item .mat-list-item-content,
+.mat-list-base .mat-list-option .mat-list-item-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 10px !important;
+  position: relative;
+  height: inherit;
+}
+
+.mat-list-base {
+  padding: 0 !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .view-more-width {
+    max-width: 70%;
+  }
+
+  .view-less-width {
+    max-width: 35%
+  }
+
+  .example-container-width {
+    max-width: 60%
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .view-more-width {
+    max-width: 90%;
+  }
+
+  .view-less-width {
+    max-width: 50%
+  }
+
+  .example-container-width {
+    max-width: 60%
+  }
+}
+
+
+/* On screens that are 992px wide or less */
+@media screen and (max-width: 992px) {
+  .view-more-width {
+    max-width: 80%;
+  }
+
+  .view-less-width {
+    max-width: 50%
+  }
+
+  .example-container-width {
+    max-width: 60%
+  }
+}
+
+/* On screens that are 600px wide or less */
+@media screen and (max-width: 600px) {
+  .view-more-width {
+    max-width: 100%;
+  }
+
+  .view-less-width {
+    max-width: 80%
+  }
+
+  .example-container-width {
+    max-width: 90%
+  }
+}

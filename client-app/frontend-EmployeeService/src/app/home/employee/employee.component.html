@@ -1,1 +1,47 @@
-<p>employee works!</p>
+<div class="create-button">
+  <button mat-raised-button class="button-update" (click)="createEmployee()">
+    Create Employee
+  </button>
+</div>
+<table>
+  <caption>
+    <h2>Employees Details</h2>
+  </caption>
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Salary</th>
+      <th>Update</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let employee of employees">
+      <td>{{ employee.firstName }}</td>
+      <td>{{ employee.lastName }}</td>
+      <td>{{ employee.emailId }}</td>
+      <td>{{ employee.salary }}</td>
+      <td>
+        <button
+          mat-raised-button
+          class="button-update"
+          (click)="updateEmployee(employee.empId)"
+        >
+          Update
+        </button>
+      </td>
+      <td>
+        <button
+          mat-raised-button
+          class="button-delete"
+          (click)="deleteEmployee(employee.empId)"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
